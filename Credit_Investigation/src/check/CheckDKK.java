@@ -7,6 +7,7 @@ package check;
  * @author 杨少博
  *  2017-3-20下午3:44:44
  *  校验贷款卡
+ *  未完善
  */
 public class CheckDKK {
 
@@ -43,8 +44,12 @@ public class CheckDKK {
 			}
 			totalValue += weightValue[j] * checkValue[j];
 		}
+		System.out.println("totalValue:"+totalValue);
 		c = 1 + totalValue % 97;
+		
 		int val = (financecode[14] - 48) * 10 + (financecode[15] - 48);
+		System.out.println(c);
+		System.out.println(val);
 		if (val == c) {
 			return true;
 		}
