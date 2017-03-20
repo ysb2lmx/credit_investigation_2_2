@@ -22,10 +22,13 @@ public class TypeChecker {
 		}		
 		return a-55;
 	}
+	
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
 //		String code="11015030200208910G";//错误
-		String code="G1015030200074450T";
+//		String code="G1015030200074450T";
+//		String code="G7015030400124900X";//正确
+		String code="G1015030200123580I";//正确
 //		String code="G7015030200123690L";//正确
 //		String code="G70150302002239002";//正确
 		byte creditCode[]=code.getBytes();
