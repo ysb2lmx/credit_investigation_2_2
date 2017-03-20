@@ -3,6 +3,7 @@
  */
 package test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -32,6 +33,41 @@ public class Array {
 		String intArrayString=Arrays.toString(intArray);
 		System.out.println(intArray);
 		System.out.println(intArrayString);
+		
+		/*
+		 * 从一个数组创建数组列表
+		 */
+		String[] stringArray={"a","b","c","d","e"};
+		ArrayList<String> arrayList = new ArrayList<String>(Arrays.asList(stringArray));
+		System.out.println(arrayList);
+		
+		/*
+		 * 检查一个数组是否包含某个值
+		 */
+		String[] stringArray_1={"a","b","c","d","e"};
+		boolean b = Arrays.asList(stringArray_1).contains("a");
+		System.out.println(b);
+		
+		/*
+		 * 连接两个数组
+		 */
+		int[] intArray_1={1,2,3,4,5};
+		int[] intArray_2={6,7,8,9,10};
+		
+//		int[] combinedIntArray=ArrayUtils.addAll(intArry_a,intArray_2);
+//		int[] combinedIntArray = ArrayUtils.addAll(intArray, intArray2);  
+		
+		/*
+		 * 声明一个内敛数组 Array inline
+		 */
+//		method(new String[]){"a","b","c","d","e","f"};
+		
+		
+		/*
+		 * 把提供的数组元素放入一个字符串
+		 */
+//		String j = StringUtils.join(new String[]{"a","b","c","d","e"});
+		
 
 	}
 
