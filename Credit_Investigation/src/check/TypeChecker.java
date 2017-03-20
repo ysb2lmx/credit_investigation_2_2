@@ -31,7 +31,7 @@ public class TypeChecker {
 			System.out.println("机构信用代码长度不为18位");
 			return;
 		}
-		if(!Pattern.matches("[A-Z]{1}[0-9]{16}[0-9A-Z\\*{1}", new String(creditCode))){
+		if(!Pattern.matches("[A-Z]{1}[0-9]{16}[0-9A-Z\\*]{1}", new String(creditCode))){
 			System.out.println("不符合正则表达式的规范");
 		}
 		int m=36;
@@ -43,7 +43,9 @@ public class TypeChecker {
 				s=m;
 			}
 			s=s*2%(m+1);
-			System.out.println((s+char2num(creditCode[(creditCode.length-1)]))%m==1);
+		}
+		if (((s+char2num(creditCode[(creditCode.length-1)]))%m==1) == false){
+			System.out.println("不符合校验位的校验");
 		}
 	}
 
