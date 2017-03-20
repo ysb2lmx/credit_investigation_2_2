@@ -40,9 +40,9 @@ public class Check_Sacc_Base_Lic_No {
 		String code="T2055000097007";//错误
 		byte base_no[]=code.getBytes();
 		if(checkSaccBaseLicNO(base_no)==false){
-			System.out.println("开户许可证核准证号有误");
+			System.out.println("开户许可证核准证号有误:"+base_no);
 		}else{
-			System.out.println("开户许可证核准证号正确");
+			System.out.println("开户许可证核准证号正确:"+base_no);
 		}
 	}
 
