@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
  * @author 杨少博
  * 2017-3-20
  * 本程序校验的是机构信用代码
+ * 已完善
  */
 public class TypeChecker {
 

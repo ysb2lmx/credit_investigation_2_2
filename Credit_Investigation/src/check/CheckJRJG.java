@@ -7,6 +7,7 @@ package check;
  * @author 杨少博
  *2017-3-20下午3:57:17
  *校验金融机构代码
+ *已完善
  */
 public class CheckJRJG {
 
@@ -45,7 +46,9 @@ public class CheckJRJG {
 	}
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
-		String code="2050401n013";
+//		String code="2050401n013";//正确
+//		String code="19304010052";//正确
+		String code="19304010055";//错误
 		byte jrjg_code[]=code.getBytes();
 		if(checkJRJG(jrjg_code)==false){
 			System.out.println("金融机构代码有误");
